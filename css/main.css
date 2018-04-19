@@ -9,6 +9,47 @@ header {
 }
 
 main {
+  /* Style the container with a rounded border, grey background and some padding and margin */
+.container {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+}
+
+/* Clear floats after containers */
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.container img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/* Increase the font-size of a span element */
+.container span {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
+@media (max-width: 500px) {
+  .container {
+    text-align: center;
+  }
+
+  .container img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
 
 }
 
@@ -36,7 +77,6 @@ h1 {
   color: #DB0400;
   margin: 0;
   max-width: 100%;
-  text-align: center;
 }
 
 h2 {
@@ -153,4 +193,22 @@ a:hover {
 
 a:active {
 
+}
+
+/* hero */
+.hero {
+  background-image: url('../Img/Freefall.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.hero {
+  postion: relative;
+  height: 34vw;
+}
+
+.hero-text {
+  height: 100%;
+  postion: relative;
 }
