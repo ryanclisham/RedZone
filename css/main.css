@@ -80,7 +80,7 @@ h1 {
 }
 
 h2 {
-  color: #ffffff;
+  color: #000000;
   font-size: 18px;
   margin: 0;
 }
@@ -204,11 +204,39 @@ a:active {
 }
 
 .hero {
-  postion: relative;
+  position: relative;
   height: 34vw;
 }
 
-.hero-text {
+.hero-content {
   height: 100%;
-  postion: relative;
+  position: relative;
+}
+
+.hero-text {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 0.4rem;
+  padding: 15px;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+.hero-content h1,
+.hero-content h2,
+.hero-content h3,
+.hero-content h4,
+.hero-content h5,
+.hero-content h6 {
+  color: #fff;
+  font-size: 50px;
+}
+
+.hero-content p {
+  color: #bbb;
+  font-size: 28px;
+}
+
+.hero-content p:last-child {
+  margin-bottom: 0;
 }
