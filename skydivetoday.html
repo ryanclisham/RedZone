@@ -8,6 +8,7 @@
   <link rel="icon" href="Img/The_mascot.png" type="image/png">
   <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
 
+
   <!-- page title -->
   <title>Book A Skydive - RedZone</title>
 
@@ -20,12 +21,15 @@
 
   <!-- start making your grid here -->
   <header>
-   <div class="row">
-     <div class="col-xs-6 col-sm-6 col-lg-3 center-vertical center-horizontal">
-     </div>
-     <div class="col-xs-6 col-sm-6 col-lg-9">
-     </div>
-   </div>
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 col-lg-3 center-vertical center-horizontal">
+        <img width="150" height="125" src="Img/The_mascot.png">
+      </div>
+      <div class="col-xs-6 col-sm-6 col-lg-9">
+        <h1>RedZone Skydiving</h1>
+        <span class="tagline"><i>"Everythings Better In The Freefall!"</i></span>
+      </div>
+    </div>
   </header>
 
   <main>
@@ -50,15 +54,28 @@
 
    <div class="row">
      <div class="col-xs-12 col-sm-12 col-lg-12">
-    <form action="https://formspree.io/redzoneskydivingusa@gmail.com" method="POST">
-      <feildset>
-      <legend>Personal Details</legend>
-      <p><label for=name>First name</label> <input id=name name="name" type="text" placeholder="First And Last" required/></p>
-      <p><label for="email">E-Mail</label> <input id=surname name=surname type=text placeholder=someone@mail.com required/></p>
-      <p><label for=dob>Date Of Birth</label> <input id=dob name=dob type=date required/></p>
-    </feildset>
+       <h1>Book Your Skydive Today!</h1>
+    <form action="https://formspree.io/ryanclisham@gmail.com" method="POST">
+      <fieldset>
+      <legend>Personal Information</legend>
+      <p><label for=name>First name:</label> <input id=name name="name" type="text" placeholder="First And Last" required/></p>
+      <p><label for="email">E-Mail:</label> <input id=surname name=surname type=text placeholder=someone@mail.com required/></p>
+      <p><label for=dob>Date Of Birth:</label> <input id=dob name=dob type=date required/></p>
+     </fieldset>
+   </form>
+   <form>
+     <fieldset>
+     <legend>Billing Information</legend>
+     <p><label for="card">Credit Card Number:</label> <input id=name name="name" type="text" size="20" required/></p>
+     <p><label for=name>Card Code:</label> <input id=name name="name" type="text" placeholder="CVC" size="3" required/>
 
-    </form>
+     <p><label for="payment">Payment Type:</label> <input type="radio" name="gender" value="male" checked> Visa
+     <input type="radio" name="gender" value="male" checked> MasterCard <input type="radio" name="gender" value="male" checked> Amercian Express
+     <input type="radio" name="gender" value="male" checked> Discover</p>
+     <input type="submit" value="Sign Up">
+    </fieldset>
+  </form>
+
      </div>
      <div class="col-xs-12 col-sm-6 col-lg-4"></div>
      <div class="col-xs-12 col-sm-6 col-lg-4"></div>
